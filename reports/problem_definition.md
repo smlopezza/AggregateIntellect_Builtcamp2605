@@ -178,18 +178,18 @@ In Claude.ai or ChatGPT, prompt the navigator with: the newcomer's profile + one
 
 ### mock_data_examples
 
-1. **Jessie** — Senior Manager, Data Science & Model Innovation. Successfully transitioned from academia to industry. Sandra's first mentor; Sandra was scared going in. Connection point: shared academia → industry transition. Goal: understand her journey, learn what she wished she'd known, navigate the Canadian market.
+1. **J** — Senior Manager, Data Science & Model Innovation. Successfully transitioned from academia to industry. Sandra's first mentor; Sandra was scared going in. Connection point: shared academia → industry transition. Goal: understand her journey, learn what she wished she'd known, navigate the Canadian market.
 
-2. **Aitor** — VP, Head of Analytics & AI, Retail Banking. Also transitioned from academia to industry successfully. VP-level meeting — Sandra didn't know how prep should differ for seniority. Connection point: shared academia → industry path. Goal: understand what matters at the executive level in Canadian banking AI.
+2. **A** — VP, Head of Analytics & AI, Retail Banking. Also transitioned from academia to industry successfully. VP-level meeting — Sandra didn't know how prep should differ for seniority. Connection point: shared academia → industry path. Goal: understand what matters at the executive level in Canadian banking AI.
 
-3. **Carlos** — EY Partner, Cybersecurity & Privacy. Latino from Mexico (Sandra is from Colombia) — shared cultural identity but completely different professional field. Sandra wanted to meet him but was never successful. Connection point: shared Latino experience navigating Canada, NOT professional domain. Goal: understand how to navigate Canada as a Latino professional, despite field mismatch.
+3. **C** — EY Partner, Cybersecurity & Privacy. Latino from Mexico (Sandra is from Colombia) — shared cultural identity but completely different professional field. Sandra wanted to meet him but was never successful. Connection point: shared Latino experience navigating Canada, NOT professional domain. Goal: understand how to navigate Canada as a Latino professional, despite field mismatch.
 
 ### test_scenarios
 
-- **Same-level, same-domain (Jessie):** Does it feel personal? Does it leverage the academia → industry bridge?
-- **Senior-level, same-domain (Aitor):** Does it adjust tone and questions for VP-level? Does it still use the shared transition experience?
-- **Senior-level, different-domain (Carlos):** Does it reason correctly that the connection is cultural, not professional? Does it avoid generic domain questions?
-- **Bonus edge case:** Run Jessie's scenario in Spanish — does it sound natural or translated?
+- **Same-level, same-domain (J):** Does it feel personal? Does it leverage the academia → industry bridge?
+- **Senior-level, same-domain (A):** Does it adjust tone and questions for VP-level? Does it still use the shared transition experience?
+- **Senior-level, different-domain (C):** Does it reason correctly that the connection is cultural, not professional? Does it avoid generic domain questions?
+- **Bonus edge case:** Run J's scenario in Spanish — does it sound natural or translated?
 
 ### success_criteria
 

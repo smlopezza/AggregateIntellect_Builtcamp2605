@@ -2,28 +2,28 @@
 
 **Date:** 2026-05-05
 **Prompt tested:** prompts/testing_prompt.txt (v2)
-**Test cases run:** 4 (Jessie, Aitor, Carlos, Jessie in Spanish)
+**Test cases run:** 4 (J, A, C, J in Spanish)
 
 ---
 
 ## experiments_conducted
 
-1. **Jessie** — warm intro, same domain, shared academia→industry journey, first coffee chat, fear-based
-2. **Aitor** — hot intro via mentor, same domain, shared journey, VP level
-3. **Carlos** — cold (met briefly at keynote), cultural connection (Latino), different field, Partner level
-4. **Jessie in Spanish** — same as case 1, full bilingual test
+1. **J** — warm intro, same domain, shared academia→industry journey, first coffee chat, fear-based
+2. **A** — hot intro via mentor, same domain, shared journey, VP level
+3. **C** — cold (met briefly at keynote), cultural connection (Latino), different field, Partner level
+4. **J in Spanish** — same as case 1, full bilingual test
 
 ---
 
 ## successful_patterns
 
-- **Connection type identification works:** The navigator correctly identified that Carlos's connection was cultural (Latino/shared immigrant experience), not domain-based — and built all prep questions around that. Did not generate a single cybersecurity question.
-- **Questions felt tailored:** Questions were meaningfully different across all three contacts. Same domain questions for Jessie/Aitor did not work for Carlos.
+- **Connection type identification works:** The navigator correctly identified that C's connection was cultural (Latino/shared immigrant experience), not domain-based — and built all prep questions around that. Did not generate a single cybersecurity question.
+- **Questions felt tailored:** Questions were meaningfully different across all three contacts. Same domain questions for J/A did not work for C.
 - **WHY explanations teach transferable principles:** Each question's explanation named a reusable principle (e.g., "find the shared experience and go deep," "show self-reflection before asking for advice") — not just justification for one call.
 - **Conversation script structure works:** Opening → About Me → Questions → Closing → Read the room felt natural and complete.
 - **"Read the room" ask logic:** Three-option framework (second meeting / referral / gracious close) tested better than ranked primary/secondary asks.
 - **Spanish structure was largely natural:** Bones of the script were correct; needed only minor phrasing corrections (see failure modes).
-- **Cold outreach for Carlos:** Outreach message approach (anchor to event, name the topic explicitly, "not about cybersecurity") felt right and authentic.
+- **Cold outreach for C:** Outreach message approach (anchor to event, name the topic explicitly, "not about cybersecurity") felt right and authentic.
 
 ---
 
@@ -36,7 +36,7 @@
   - ❌ "Pero me gustaría..." (unnecessary contrast) → ✅ "Me gustaría..."
   - ❌ "Esto ha sido de muchísima ayuda" → ✅ "Esta conversación ha sido de muchísima ayuda"
 - **Default meeting time:** Initial prompt used 20 minutes. Corrected to 30 minutes as default.
-- **VP framing:** First Aitor script adapted the "about me" for executive framing — corrected. The bridge sentence after the pitch handles context, not the pitch itself.
+- **VP framing:** First A script adapted the "about me" for executive framing — corrected. The bridge sentence after the pitch handles context, not the pitch itself.
 
 ---
 
