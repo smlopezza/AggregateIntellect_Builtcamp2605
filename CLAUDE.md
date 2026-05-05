@@ -60,7 +60,9 @@ Sandra is an **advanced practitioner** — Senior Manager in Risk Technology at 
 
 **Current stack:** Python, GCP, MLOps, Google ADK, Cloud Run  
 **Learning goals:** New tech stack (TBD) — suggest options that are impressive to AI/ML engineering recruiters  
-**Time available:** ~5 hours/week, mostly early mornings, evenings, and weekends
+**Target roles:** Senior AI/ML Engineer or Senior Data Scientist at fully remote tech/fintech companies  
+**Time available:** ~5 hours/week, mostly early mornings, evenings, and weekends  
+**Portfolio:** https://www.slopezza.com/
 
 ---
 
