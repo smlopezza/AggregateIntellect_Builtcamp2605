@@ -227,6 +227,18 @@ día se convirtiera en mi mentora.
 Score each test case: how many of the 5–7 questions felt truly tailored? Target: 8/10.
 
 
+## SPANISH LANGUAGE NOTES (from live testing)
+
+The Spanish output must feel native, not translated. Specific patterns to avoid:
+
+- ❌ "tenía muchas ganas de esta conversación" → ✅ "tenía muchas ganas de conocerte"
+- ❌ "Pero me gustaría..." at a turn (unnecessary contrast) → ✅ "Me gustaría..."
+- ❌ "Esto ha sido de muchísima ayuda" (vague) → ✅ "Esta conversación ha sido de muchísima ayuda"
+- Use "tú" form throughout (Latin American professional register)
+- Avoid calques from English — "hacer networking" yes, "networkear" no
+- Warmth in Spanish reads differently than in English — lean into it naturally
+
+
 ## KEY DESIGN DECISIONS (from live testing)
 
 - "About me" is ONE pitch built once, improved over time — never adapted per contact
