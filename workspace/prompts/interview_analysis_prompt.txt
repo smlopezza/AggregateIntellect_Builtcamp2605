@@ -1,0 +1,71 @@
+## RESEARCH CONTEXT
+
+I am building an AI navigator for Latino newcomers to Canada who are trying to break into their profession. The tool helps them understand why networking matters, prepare for coffee chats, reflect on conversations, and track relationship progress — in English and Spanish.
+
+I conducted a user research interview and have a transcript below. Analyze it using the instructions that follow.
+
+The participant is one of two types — identify which based on the transcript:
+- **Track A**: Still navigating the transition (not yet working in their profession)
+- **Track B**: Successfully transitioned (now working in their profession in Canada)
+
+---
+
+## ANALYSIS INSTRUCTIONS
+
+Extract insights under each section below. For every insight, include a direct quote from the transcript as evidence. Do not summarize — surface what is specific, surprising, or emotionally charged.
+
+---
+
+### 1. CURRENT WORKFLOW
+How does this person currently approach networking and job search?
+- What does a typical week look like?
+- What tools or resources are they using?
+- How structured vs. improvised is their approach?
+
+### 2. PAIN POINTS
+Where does it break down?
+- What specific moments or tasks cause frustration, overwhelm, or paralysis?
+- What language do they use to describe struggle? (capture emotional words directly)
+- What have they tried that didn't work?
+
+### 3. NEXT BEST ALTERNATIVE
+What are they using instead of a tool like this?
+- Programs, communities, coaches, apps, or manual approaches
+- What does their current solution do well? Where does it fall short?
+- What bar would a new tool need to clear to replace it?
+
+### 4. QUALITY RISK SIGNALS
+
+**R8 — Progress framing:**
+- How do they currently measure whether networking is "working"?
+- Do they have any metric beyond "getting a job"?
+- Is there evidence of desperation or a timeline-driven mindset?
+- Quote any moment where they describe giving up, losing motivation, or questioning the approach.
+
+**R7 — Relationship depth:** (Track A)
+- Do they reflect on individual conversations after the fact, or close the loop and move on?
+- Do they have any language for "that was a good conversation" beyond vague positive feeling?
+- Is there evidence of second meetings, follow-ups, or ongoing relationships — or only first chats?
+
+**R7 — What actually built depth:** (Track B)
+- Did they build a few deep relationships or many shallow ones?
+- Was there a specific contact or moment that turned into something ongoing?
+- What signals did they use (consciously or not) to decide to invest in a relationship?
+
+**R1 — Multi-connection contacts:**
+- Do they describe any contact with more than one connection type? (e.g., same domain AND same cultural background; warm relationship AND shared journey)
+- When they describe a contact, do they lead with one connection type and mention others in passing?
+
+### 5. CAPABILITY GAPS (Track B only)
+- What do they wish they'd had during their search that doesn't exist today?
+- What did they learn about Canadian professional culture that surprised them?
+- What turned out to matter more than they expected — and what mattered less?
+
+### 6. KEY INSIGHTS
+List the 3-5 most important things this interview reveals — things that are specific, non-obvious, or that challenge existing assumptions about the tool. Each insight should be one sentence followed by the supporting quote.
+
+---
+
+## TRANSCRIPT
+
+[PASTE TRANSCRIPT HERE]
