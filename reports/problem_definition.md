@@ -13,12 +13,14 @@ Latino newcomers to Canada, less than 5 years in the country, not yet working in
 ### user_process
 
 1. Send hundreds of job applications → silence → decide to try networking
-2. Approach contacts thinking "this person will get me a job"
-3. Set up calls via back-and-forth emails; use phone instead of video, don't dress professionally, don't prepare questions
+2. Stare at LinkedIn with no idea who to contact or how to ask — some have a few warm contacts, others feel they know nobody
+3. Draft outreach messages that sound desperate or transactional ("I need a job, can we talk?"); many never send them at all
+4. Approach contacts thinking "this person will get me a job"
+5. Set up calls via back-and-forth emails; use phone instead of video, don't dress professionally, don't prepare questions
 4. Have the call — improvised, no structure, leaves a poor impression
-5. Disappear after call #1; reappear only when they want a referral
-6. Get no results → conclude "networking doesn't work"
-7. Feel overwhelmed, disorganized, unable to see any progress made
+6. Disappear after call #1; reappear only when they want a referral
+7. Get no results → conclude "networking doesn't work"
+8. Feel overwhelmed, disorganized, unable to see any progress made
 
 ### user_existing_tools
 
@@ -36,10 +38,16 @@ Ongoing daily struggle. Networking attempts are sporadic and unstructured, not a
 
 - Wrong mental model: networking confused with nepotism or corruption from home country context
 - Transactional approach: reaching out to "get a job" not to build a relationship
+- No personal narrative: recites CV chronologically instead of telling a story; no memorable intro; can't answer "tell me about yourself" in a way that resonates with Canadian professionals
+- Skips preparation without understanding why: rushes to have coffee chats before building a story or doing any prep, treating preparation as optional overhead rather than the thing that makes the chat valuable
+- Network blindness: don't know how to assess who they actually know or identify warm vs. cold contacts
+- Outreach paralysis: don't know how to ask for a coffee chat; fear of sounding desperate or intrusive; many never send the message
+- Canadian etiquette gap: norms around how to ask, response timelines, scheduling logistics are unfamiliar
 - Execution gaps: wrong medium, no preparation, no follow-up, scheduling overhead
 - No progress visibility: can't see momentum even when it's building, leads to giving up
 - Skills communication: task-based not achievement-based framing
 - Cultural gap: assuming what worked in their home country applies in Canada
+- Friends vs. professional network confusion: in Latin America these often overlap — you do business through personal trust, family connections, mutual friends. In Canada they are separate tracks. Newcomers may feel professional networking is cold or fake, or feel uncomfortable building relationships that don't become personal friendships. This is not a flaw in Canadian culture or their own — it's a difference that needs to be named and normalized before the mechanics make sense
 
 ## assumptions_analysis
 
@@ -107,7 +115,13 @@ If we implement a bilingual proactive navigator that guides newcomers through go
 ### autonomous_capabilities
 
 - Goal-setting conversations and progress tracking toward user-defined goals
-- Contact identification within the user's existing network
+- "Why this works" framing: before each preparation phase, explains what makes coffee chats successful and why each step matters — so users engage with preparation as the thing that makes the chat valuable, not overhead to skip
+- Cultural reframing: explicitly names the friends vs. professional network distinction as a cultural difference, not a character flaw in Canadians or themselves; helps users understand that professional relationships in Canada have their own warmth and value on their own terms
+- Story and pitch development: guides user to craft their personal narrative (where they came from, what drives them, where they're headed); builds a 60-90 second intro for coffee chat openings + a one-line version for outreach messages; teaches achievement-based framing over CV recitation
+- Network assessment: guides user to map who they actually know (LinkedIn, former colleagues, professors, community contacts), distinguishes warm vs. cold contacts
+- Contact selection: helps prioritize who to reach out to first based on goals, relationship warmth, and accessibility
+- Outreach scaffolding: teaches Canadian coffee chat etiquette, asks questions to pull authentic content from the user so they write the message themselves; handles warm vs. cold contact differently
+- Scheduling support: how to suggest times, follow up if no response, confirm without friction
 - Coffee chat prep: provides question frameworks + explains *why* each question matters
 - Post-chat: provides email structure + asks prompting questions to pull authentic content from the user (does NOT draft emails for them)
 - Follow-up timing suggestions and proactive reminders
@@ -140,7 +154,7 @@ If we implement a bilingual proactive navigator that guides newcomers through go
 
 ### scope_boundaries
 
-**Primary track (networking):** Goal-setting, network contact identification, coffee chat prep frameworks, post-chat email scaffolding, follow-up reminders, relationship tracking, mentor candidate identification, progress visibility, bilingual support
+**Primary track (networking):** Goal-setting → "why this works" framing → story/pitch development → network assessment → contact selection → outreach scaffolding + Canadian etiquette → scheduling support → coffee chat prep frameworks → post-chat email scaffolding → follow-up reminders → relationship tracking → mentor candidate identification → progress visibility, bilingual support throughout
 
 **Side track — LinkedIn:** Progressive LinkedIn strategy surfaced contextually: like/comment/reshare → engage on others' content → original post creation. Navigator identifies relevant topics based on user's background and career goals.
 
