@@ -155,6 +155,57 @@ P3's journey (Track A, the hardest case): Attends a WILL Employment event. Facil
 
 ---
 
+## sustainability_model
+
+### cost_philosophy
+
+The product is community-funded, not subscription-gated or VC-backed. Running costs are made visible to users — a simple transparent counter showing what it costs to run and what the community has contributed. This aligns with the product's values: newcomers without disposable income are never pressured, but those who can contribute are warmly invited to.
+
+### contribution_model
+
+**"Pay what you can" — implemented via Ko-fi or Buy Me a Coffee.**
+
+- Contribution is optional and never required to access the product
+- Surfaced once, at a meaningful milestone: after the user completes their first post-call reflection
+- Message example (Spanish): *"Este bot no tiene inversionistas — lo mantiene la comunidad. Si te está ayudando y puedes contribuir, aquí está el link: [ko-fi]. Si no puedes ahora, también está bien — eso es exactamente para lo que está."*
+- Monthly transparency note: total users helped, total cost to run, total contributions received — no dashboard needed, a single WhatsApp broadcast or pinned message suffices
+
+**Why this framing fits:**
+- Feels community-owned, not commercial — consistent with the product's identity
+- Track A users (who benefit most, have least income) contribute least — that's intentional and okay
+- With Haiku + prompt caching, running costs stay near $10–20/month at early user volumes; a handful of contributions covers it
+- The transparency story is a strong portfolio signal: "self-sustaining tool funded by the community it serves"
+
+### cost_reduction_strategy
+
+**Model tiering (Haiku vs. Sonnet):**
+
+| Interaction type | Model | Rationale |
+|---|---|---|
+| Onboarding questions, simple nudges, milestone celebrations, next-contact suggestions | `claude-haiku-4-5-20251001` | Low reasoning load; 10–20x cheaper per token |
+| Post-call reflection (R7), connection type reasoning (R1) | `claude-sonnet-4-6` | Coaching quality directly affects product value — worth the cost |
+
+**Prompt caching:**
+- System prompt is static and long — `cache_control: ephemeral` on every turn (already in technical specs)
+- Projected cache hit rate: 80%+ for active users within the 5-minute TTL window
+
+**Token efficiency:**
+- Last 10 messages cap (not unlimited history) keeps context length bounded
+- Structured `depth_signals` and `post_call_notes` fields store reflection outputs without replaying full conversation history
+
+### longer_term_sustainability_paths
+
+| Path | Timeline | Notes |
+|---|---|---|
+| Community contributions (Ko-fi) | MVP | Low revenue, high alignment — covers early running costs |
+| Settlement org partnerships | Sprint 3 | WILL Employment, ACCES Employment, COSTI — IRCC-funded budgets and direct distribution reach |
+| Corporate DEI sponsorship | Post-launch | Companies hiring newcomers; weaker fit with product values but worth exploring |
+| Grant funding | Post-launch | IRCC digital inclusion, Google.org, Mozilla Foundation — non-dilutive but slow |
+
+Settlement org partnerships are the strongest long-term path: they solve cost, distribution, and credibility simultaneously. Worth one exploratory conversation before Sprint 3 to set up the pipeline.
+
+---
+
 ## backend_design
 
 ### technical_approach

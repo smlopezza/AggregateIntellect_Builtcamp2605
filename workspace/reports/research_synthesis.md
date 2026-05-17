@@ -93,7 +93,7 @@ Almost no networker actively pursues informal mentors. Those who do get personal
 
 > *"La importancia del mentorship informal. Pocas personas que hacen networking lo hacen. Eso te va a ayudar eventualmente a crecer profesionalmente."* — P1
 
-**Implication for product:** Actively coach users toward identifying and cultivating informal mentors — not just coffee chats. This is a specific, differentiated action the tool can drive.
+**Implication for product:** Actively coach users toward identifying and cultivating informal mentors — not just coffee chats. This is a specific, differentiated action the tool can drive. **Reference model:** Persica (persica.ngo) does this for Iranian newcomers — volunteer mentors, free 30-min virtual sessions, bookable via app. A similar model for the Latino community doesn't appear to exist yet. The AI companion could serve as the preparation + follow-up layer around these human mentor sessions rather than trying to replace them.
 
 ---
 
@@ -189,6 +189,7 @@ Job searching alone is corrosive. P2 identified community — shared frustration
 | LinkedIn coaches (free content) | Social media | P2 consumed free posts from job search coaches; didn't pay for coaching but got value from public content. |
 | WILL Employment Solutions | Non-profit / settlement org | P3 attends workshops and conferences for internationally trained professionals. Valued for encouragement and key practical points. In-person events more effective than virtual for her. |
 | Career coach (unnamed) | Professional coaching | P3 has a career coach. Helps with the search but doesn't fill the emotional load gap she described. |
+| Persica (persica.ngo) | Non-profit / mentor booking app | Volunteer mentor platform for Iranian newcomers to Canada. Free 30-min virtual sessions, bookable via app (built on Setmore). Mentors are established professionals from the same background. Strong model for formalizing informal mentorship (T6) and community (T10). **Strategic reference:** AI companion could serve as preparation + follow-up layer around human mentor sessions — not competing, complementary. |
 
 ---
 

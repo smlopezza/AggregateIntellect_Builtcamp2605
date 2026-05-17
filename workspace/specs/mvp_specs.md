@@ -73,7 +73,11 @@ client.messages.create(
 
 ### Anthropic Claude API
 
-**Model:** `claude-sonnet-4-6`
+**Model tiering (cost optimization):**
+- `claude-haiku-4-5-20251001` — onboarding, simple nudges, milestone celebrations, next-contact suggestions
+- `claude-sonnet-4-6` — post-call reflection (R7) and connection type reasoning (R1) where coaching quality is the product
+
+Pass the model as a parameter to `claude_client.py` so callers choose the tier; default to Haiku for nudge jobs, Sonnet for inbound message processing where full reasoning may be needed.
 
 **Prompt caching:** The static system prompt section must use `cache_control: {"type": "ephemeral"}` to reduce latency and cost on every turn.
 
