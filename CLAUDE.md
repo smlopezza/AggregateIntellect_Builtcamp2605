@@ -66,7 +66,7 @@ Sandra is an **advanced practitioner** — Senior Manager in Risk Technology at 
 
 ---
 
-## Sandra's Project: Newcomers to Canada Agent (name TBD)
+## Sandra's Project: SofIA — Tu aliada en Canadá
 
 A bilingual (English/Spanish) AI companion for Latino newcomers to Canada who haven't yet found work in their profession. The core transformation: from fear and overwhelm around networking → confidence, genuine connection, and a sense of momentum.
 
