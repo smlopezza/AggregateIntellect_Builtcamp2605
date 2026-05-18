@@ -81,7 +81,7 @@ A new risk emerged from user research that wasn't in the original evaluation fra
 
 ### delivery_mechanism
 
-**MVP (Sprint 2):** WhatsApp bot powered by Claude API.
+**MVP (Sprint 2):** SofIA — a WhatsApp-based AI ally powered by Claude API.
 
 **Sprint 3:** Web app for mentor discovery and booking (modeled on the Persica approach — volunteer mentors, bookable sessions, AI companion as prep + follow-up layer around human mentor sessions).
 
@@ -91,7 +91,7 @@ Distribution: settlement orgs (WILL Employment and equivalents) share the WhatsA
 
 The WhatsApp bot lives at the intersection of proactive and conversational. It finds the user at the right moment — it doesn't wait to be opened.
 
-The word **"networking" never appears** in the WhatsApp interface. The bot doesn't present itself as a networking tool. It presents itself as a companion that checks in after conversations, suggests who to talk to, and teaches professional etiquette through conversation — naturally, in Spanish or English.
+The word **"networking" never appears** in early conversations. SofIA doesn't present herself as a networking tool. She presents herself as an ally who checks in after conversations, suggests who to talk to, and teaches professional etiquette through conversation — naturally, in Spanish or English.
 
 ### agency_vs_autonomy
 
@@ -115,10 +115,15 @@ The word **"networking" never appears** in the WhatsApp interface. The bot doesn
 - Settlement org shares WhatsApp number at event, or newcomer receives referral from a peer
 - User sends first message → bot responds in their chosen language
 
-**Onboarding (WhatsApp, ~3–4 exchanges):**
+**Onboarding (WhatsApp, ~4–6 exchanges):**
 - Language preference (Spanish or English)
-- Name, professional field, how long in Canada
-- One question: "¿Cuál es tu mayor reto ahora mismo en tu búsqueda?" — surfaces emotional state and starting point
+- Name, professional field, how long in Canada, city (used to set timezone for proactive messages)
+- Situational assessment — bot calibrates to where the user actually is:
+  - "¿Ya estás enviando aplicaciones, o estás en la etapa de explorar el mercado?"
+  - If applying: "¿Has tenido respuestas, o has mandado muchas sin resultado?"
+  - "¿Tienes algún contacto profesional en Canadá con quien hayas hablado, o estás empezando desde cero?"
+- Based on answers: bot determines entry path (has contacts → activate them; no contacts → identify first one)
+- One emotional anchor question: "¿Cuál es tu mayor reto ahora mismo?" — surfaces starting point and emotional state
 
 **Pre-chat nudge (autonomous):**
 - Evening before a registered conversation: brief, warm, in their language
@@ -144,7 +149,26 @@ The word **"networking" never appears** in the WhatsApp interface. The bot doesn
 
 ### user_journey_notes
 
-P3's journey (Track A, the hardest case): Attends a WILL Employment event. Facilitator mentions a WhatsApp number at the end. She texts it that evening because it's zero friction — she's already on WhatsApp. Bot responds in Spanish. Three questions. No mention of "networking." Next morning the bot sends a warm message. Over the following week, the bot checks in after two conversations she was already having. She starts to feel like something is tracking her progress even though she doesn't feel like a "networker." That's the transformation.
+P3's journey (Track A, the hardest case — and the transformation arc the product is designed to produce):
+
+1. Hears about the bot — from a settlement org counselor at an event, or from a friend who used it and found it helpful. Trust is transferred: someone she already trusts told her about it.
+2. Texts the number. Bot responds in Spanish. Before anything else, it tries to understand where she actually is: Has she started applying? Is she overwhelmed by silence after hundreds of applications? Is she just arriving and doesn't know where to begin? Does she have any professional contacts in Canada at all? The onboarding is situational — the bot calibrates everything that follows to her current reality, not a generic starting point.
+3a. If she has contacts: bot helps her identify the strongest first conversation and prepares her for it.
+3b. If she has no contacts: the bot guides her through LinkedIn step by step — how to search for alumni from her university or former employer who are now in Canada, how to use filters to find people in her field. It helps her identify one realistic first contact. Before scripting the outreach, the bot helps her write her About Me — a 3–4 sentence professional summary that captures who she is, what she did, and what she's looking for. The bot explains that both the About Me and outreach messages will be written in English — not as a rule, but as advice: writing them in English is one of the fastest ways to absorb Canadian professional etiquette, the tone, the structure, how to ask for something without sounding too direct or too formal. The rest of the conversation stays in Spanish. She confirms the About Me, it's saved to her profile, and from that point on it's reused in every coffee chat prep without her having to explain herself again. She can update it any time she asks. Then the bot scripts the first cold outreach in English using her About Me and the shared connection point — and frames the ask as low-stakes: the goal is just a conversation.
+4. Bot sends a warm pre-chat nudge the evening before her first coffee chat.
+5. 2 hours after the chat: *"¿Cómo te fue?"* — Socratic reflection questions follow.
+6. Over the following weeks, the bot checks in after conversations she's already having. She starts to feel she is progressing — not because she's "networking," but because something is tracking her momentum and she can feel it building.
+6b. After each coffee chat, the sequence of giving back unfolds over two days. The same evening, after the post-call reflection, the bot suggests one specific action: share an article on a topic the contact mentioned, comment on or re-share one of their LinkedIn posts, or send a message sharing how something they said helped her. The next morning, a separate nudge arrives: "Did you send [name] a thank-you note?" — the bot offers to draft it in English, personalised to what was discussed. Not generic. Not the same day. The right message at the right moment.
+7. After a few strong coffee chats, the bot introduces the concept of mentorship: some of the people she's been talking to may be becoming something more than contacts — people who are genuinely invested in her success. The bot explains what an informal mentor is, how to recognize one (they follow up, they offer help without being asked, they share their own story), and why it matters — a mentor can accelerate your integration, open doors you didn't know existed, and help you navigate a professional culture that wasn't designed with you in mind. The concept is introduced through her own experience, not as theory.
+8. She starts to understand what networking actually is — not through explanation, but through lived experience. She has met people who are genuinely curious about her. The concept becomes real.
+9. She is no longer afraid to use the word "networking" — because she now understands that her objective is to build meaningful relationships, not to collect contacts.
+10. She starts getting interviews. The first one doesn't go well — she feels frustrated. The bot helps her reflect: who in her network could she reach out to debrief, understand what happened, and know what to improve for next time. Her network becomes a resource for growth, not just job leads.
+11. She advances to second and third interviews. Some don't convert. She feels the disappointment, but the bot helps her frame it as progress — *"next time I will move further in the process."* Resilience built through reflection, not cheerleading.
+12. She receives a job offer. The bot helps her think about who in her network to reach out to for negotiation support — someone who knows the market, the company, or has been through it. Her relationships become a resource at the most important moment.
+13. She lands the job and shares it with the bot. The bot celebrates genuinely. Then, at exactly the right moment, surfaces the pay-it-forward ask — not as a transaction, but as an invitation to become the person who helps the next newcomer the way her network helped her.
+14. She starts working. The bot reminds her who she already knows at the company — contacts she met during her search who are now colleagues or internal allies. It prompts her to reach out intentionally during her first weeks. The bot introduces the concept of the first 90 days: the window that defines how you're perceived, how quickly you build credibility, and how effectively you integrate into the team. Her network, built during the hardest months of her search, becomes her advantage on day one.
+
+**That is the transformation.** The word "networking" should earn its way into the conversation — introduced by the bot only after the user has had the experiences that make it meaningful, not before. And the full arc ends not with a job offer — it ends with a person who is succeeding, giving back, and no longer the same person who was afraid to send a message to a stranger.
 
 ### integration_touchpoints
 
@@ -163,18 +187,29 @@ The product is community-funded, not subscription-gated or VC-backed. Running co
 
 ### contribution_model
 
-**"Pay what you can" — implemented via Ko-fi or Buy Me a Coffee.**
+**"Pay it forward" — community-funded, not subscription-gated.**
 
-- Contribution is optional and never required to access the product
-- Surfaced once, at a meaningful milestone: after the user completes their first post-call reflection
-- Message example (Spanish): *"Este bot no tiene inversionistas — lo mantiene la comunidad. Si te está ayudando y puedes contribuir, aquí está el link: [ko-fi]. Si no puedes ahora, también está bien — eso es exactamente para lo que está."*
-- Monthly transparency note: total users helped, total cost to run, total contributions received — no dashboard needed, a single WhatsApp broadcast or pinned message suffices
+The funding ask is never a paywall. It is a celebration moment: the user lands a job or hits a meaningful milestone, the bot celebrates with them, and at that exact moment surfaces a contribution link framed as an act of solidarity — not a transaction.
+
+- **Trigger moment:** Claude detects `job_landed` — the user explicitly shares that they got a job offer. No earlier. Never surfaced before the user has achieved the outcome the tool exists to support.
+- **Message example (Spanish):** *"¡Lo lograste! Esto es real. Este bot no tiene inversionistas — lo sostiene la comunidad. Si quieres ayudar a que la próxima persona tenga este apoyo, aquí está: [link]. Si no puedes ahora, está bien — para eso existe."*
+- **What contribution unlocks:** A higher daily message limit (50/day instead of 15) — not a paywall, but a meaningful thank-you. Contributors are also listed (anonymously if they prefer) in the monthly transparency note.
+- **Monthly transparency note:** Total users helped, running cost, contributions received — sent as a WhatsApp broadcast. No dashboard needed. This is the portfolio story: "self-sustaining tool funded by the community it serves."
+- **Implementation for MVP:** Sandra manually shares a Stripe link or Ko-fi link in WhatsApp when the trigger moment is detected by Claude. Sandra manually updates `tier: contributor` in Firestore. Automate the Stripe webhook in Sprint 3.
+
+**Tier model:**
+
+| Tier | Message cap | How to reach it |
+|------|-------------|-----------------|
+| Free | 15 messages/day | Default for all users |
+| Contributor | 50 messages/day | Pay-it-forward contribution |
+| Org-sponsored | Unlimited | Settlement org partnership covers the user |
 
 **Why this framing fits:**
-- Feels community-owned, not commercial — consistent with the product's identity
-- Track A users (who benefit most, have least income) contribute least — that's intentional and okay
-- With Haiku + prompt caching, running costs stay near $10–20/month at early user volumes; a handful of contributions covers it
-- The transparency story is a strong portfolio signal: "self-sustaining tool funded by the community it serves"
+- "Ayuda mutua" — mutual aid — is culturally resonant in Latino communities
+- Track A users (who benefit most, least income) contribute least — intentional and okay
+- The people most motivated to give back are those who just got a job — peak gratitude = peak conversion
+- Contribution creates a visible alumni community, which itself is proof the tool works
 
 ### cost_reduction_strategy
 
@@ -197,7 +232,7 @@ The product is community-funded, not subscription-gated or VC-backed. Running co
 
 | Path | Timeline | Notes |
 |---|---|---|
-| Community contributions (Ko-fi) | MVP | Low revenue, high alignment — covers early running costs |
+| Community pay-it-forward (Stripe/Ko-fi) | MVP | Triggered at job milestone; covers baseline running costs; builds alumni community |
 | Settlement org partnerships | Sprint 3 | WILL Employment, ACCES Employment, COSTI — IRCC-funded budgets and direct distribution reach |
 | Corporate DEI sponsorship | Post-launch | Companies hiring newcomers; weaker fit with product values but worth exploring |
 | Grant funding | Post-launch | IRCC digital inclusion, Google.org, Mozilla Foundation — non-dilutive but slow |
@@ -288,6 +323,11 @@ onboarding
   → first_chat_completed         (user reports back after first chat)
   → building_momentum            (3+ chats completed)
   → deepening_relationships      (first second meeting scheduled)
+  → interview_stage              (user reports their first interview) ← Sprint 3
+  → advancing_in_interviews      (user reaches 2nd or 3rd round)    ← Sprint 3
+  → job_offer_received           (user receives an offer, needs negotiation support) ← Sprint 3
+  → job_landed                   (user accepts the job and shares it) ← pay-it-forward trigger
+  → first_90_days                (user starts working; bot activates internal relationship strategy) ← Sprint 3
 ```
 
 State is also used by Cloud Scheduler queries — proactive nudge jobs filter on `current_state` and contact fields (e.g., don't send pre-chat nudge to users still in `onboarding`).
@@ -382,37 +422,55 @@ One user. One contact. One coffee chat. One post-call reflection. That loop is t
 | Feature | Tests which risk? | Verdict |
 |---|---|---|
 | Bilingual onboarding (es/en) | R9 — framing must work in Spanish from day one | ✅ In |
-| No "networking" language in any message | R9 — Track A user engagement | ✅ In |
+| Situational onboarding (app stage + has contacts) | R9 — framing only works if bot knows where she is | ✅ In |
+| State-dependent language ("networking" earns its way in) | R9 — core framing mechanism across the arc | ✅ In |
+| English-only professional artifacts + explanation why | R9 — etiquette through doing, not instruction | ✅ In |
+| About Me — created in English, saved, reused in every prep | R1 — enriches connection type reasoning | ✅ In |
 | Contact intake + connection type reasoning | R1 — multi-connection misclassification | ✅ In |
 | Prep questions with WHY explanations | R1 — does it teach or just instruct? | ✅ In |
-| Pre-chat nudge (Cloud Scheduler, 8pm) | R9 — "something that finds you" | ✅ In |
-| Post-chat check-in (Cloud Scheduler, +2h) | R7 — user won't self-trigger; bot must find her | ✅ In |
+| Pre-chat nudge (8pm local time) | R9 — "something that finds you" | ✅ In |
+| Post-chat check-in (+2h, within sendable window) | R7 — user won't self-trigger; bot must find her | ✅ In |
 | Socratic post-call reflection | R7 — depth signal recognition without labeling | ✅ In |
+| Giving-back prompt after every post-call reflection | Completes relationship model — reciprocity not just recognition | ✅ In |
+| Thank-you nudge at 7am local time (day after) | Canadian professional etiquette learned through doing | ✅ In |
+| Timezone-aware quiet hours (no messages 9pm–6am local) | Respect boundary — no proactive messages while user sleeps | ✅ In |
 | Claude infers + saves state | Core behaviour, no extra infra | ✅ In |
+| Mentorship introduction (at deepening_relationships) | Celebrates depth milestone; names what they've built | ✅ In |
+| Rolling conversation summary (Haiku, background task) | Context quality as conversations grow beyond 10 messages | ✅ In |
+| Rate limiting + spending caps | Safety — before number is shared publicly | ✅ In |
 | LinkedIn fields | Doesn't change R9/R7/R1 test | ❌ Deferred |
-| Conversation summary generation | Overkill for 1-2 test users | ❌ Hardcoded (last 10 messages) |
 | Milestone records in Firestore | Claude celebrates inline | ❌ Deferred |
 | planning_style preference | Design consideration, not quality risk test | ❌ Deferred |
 | Web app / mentor booking | Sprint 3 | ❌ Out |
 
 ### hardcoded_elements
 
-- **Conversation history:** last 10 messages stored as array in user document — no summary generation, no subcollection queries
+- **All proactive jobs run hourly** — timezone check determines whether to send, not a fixed UTC time
 - **Nudge eligibility:** Cloud Scheduler queries Firestore directly — no LLM call to decide who gets a nudge
 - **Single contact for MVP:** user registers one contact at a time — no contact list management UI
 - **No admin dashboard:** Sandra reads Firestore directly to monitor conversations
 - **No error recovery flows:** basic retry on Claude API failure, simple fallback message
+- **Zero-contacts path:** skipped — first test user will have at least one contact
+- **Pay-it-forward mechanics:** Sandra manually sends Stripe/Ko-fi link and flips tier in Firestore
 
 ### definition_of_done
 
-- [ ] A real Track A user (Spanish-speaking, active job searcher, no role yet in field) texts the WhatsApp number and completes onboarding in Spanish
+- [ ] A Track A Spanish-speaking newcomer texts the number and completes situational onboarding in Spanish — including city (used for timezone)
+- [ ] Bot correctly calibrates to application stage and contact status
 - [ ] User registers one contact with a scheduled chat date and time
-- [ ] Bot generates prep questions with WHY explanations tailored to the connection type
-- [ ] Pre-chat nudge fires automatically the evening before — no manual trigger by Sandra
-- [ ] Post-call check-in fires automatically 2 hours after the scheduled chat time
-- [ ] Bot responds to post-call notes with Socratic reflection questions (not declarations)
-- [ ] The word "networking" appears zero times in any bot message
-- [ ] Sandra can read the full conversation transcript and score R9, R7, R1 quality
+- [ ] Bot drafts About Me in English, explains why, user confirms, saved to Firestore — reused in prep without re-asking
+- [ ] Bot generates prep questions with connection type reasoning and WHY explanations
+- [ ] Pre-chat nudge fires automatically at 8pm user's local time the evening before — no manual trigger
+- [ ] Post-call check-in fires automatically ~2h after scheduled time — only within 6am–9pm local window
+- [ ] Bot responds with Socratic reflection questions (no declarations)
+- [ ] After post-call reflection, bot suggests one specific giving-back action (LinkedIn, article, closing the loop)
+- [ ] Thank-you nudge fires at 7am local time the day after — bot offers to draft the thank-you in English, personalised to the conversation
+- [ ] No proactive message sent between 9pm and 6am user's local time
+- [ ] If user schedules a second meeting: deepening_relationships fires, bot celebrates, mentorship concept introduced
+- [ ] Conversation summary generated and saved after 10th exchange
+- [ ] "networking" appears zero times in early-state messages
+- [ ] Rate limits active; spending caps set in Anthropic + Twilio consoles before number is shared
+- [ ] Sandra reads the full transcript and scores R9, R7, R1
 
 ### implementation_platform_selection
 
@@ -434,7 +492,8 @@ One user. One contact. One coffee chat. One post-call reflection. That loop is t
 | Feature | Why deferred |
 |---|---|
 | LinkedIn fields on user + contact | Not needed for first 1-2 users; add before Sprint 3 |
-| Conversation summary (rolling) | Last 10 messages sufficient for MVP user volume |
+| Zero-contacts LinkedIn path | Pick test user with ≥1 contact; add before Sprint 3 |
+| Seasonal giving-back nudges (Thanksgiving, holidays) | Requires extra Cloud Scheduler jobs + cultural context; Sprint 3 |
 | Milestone records in Firestore | Claude inline celebration is enough to validate the behaviour |
 | planning_style preference question | UX refinement, not a quality risk test |
 | Multiple contacts per user | One contact loop is enough to test all three risks |
