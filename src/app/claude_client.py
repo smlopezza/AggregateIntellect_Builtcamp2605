@@ -23,6 +23,7 @@ def build_context(user: UserDoc, contact: ContactDoc | None) -> str:
         f"Language: {user.language}",
         f"Time in Canada: {user.time_in_canada}",
         f"City: {user.city}",
+        f"Country of origin: {user.country_of_origin}",
         f"Current challenge: {user.current_challenge}",
         f"Application stage: {user.application_stage}",
         f"Current state: {user.current_state}",

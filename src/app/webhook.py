@@ -173,6 +173,10 @@ def _apply_tool_use(user, contact, tool_inputs: dict) -> bool:
     if about_me and not user.about_me:
         user.about_me = about_me
 
+    country_of_origin = tool_inputs.get("country_of_origin")
+    if country_of_origin and not user.country_of_origin:
+        user.country_of_origin = country_of_origin
+
     contact_updates = tool_inputs.get("contact_updates")
     if contact_updates and contact:
         for field, value in contact_updates.items():

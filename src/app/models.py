@@ -31,6 +31,7 @@ class UserDoc:
     language: str = "es"
     time_in_canada: str = ""
     city: str = ""
+    country_of_origin: str = ""
     timezone: str = "America/Toronto"
     current_challenge: str = ""
     application_stage: str = "exploring"
