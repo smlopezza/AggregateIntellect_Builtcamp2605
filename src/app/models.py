@@ -1,4 +1,4 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 
@@ -14,9 +14,13 @@ class ContactDoc:
     thank_you_nudge_sent_at: Optional[str] = None
     post_call_notes: Optional[str] = None
     depth_signals: Optional[str] = None
-    topics_of_interest: list = field(default_factory=list)
+    topics_of_interest: Optional[list] = None
     linkedin_url: Optional[str] = None
     created_at: Optional[str] = None
+
+    def __post_init__(self):
+        if self.topics_of_interest is None:
+            self.topics_of_interest = []
 
 
 @dataclass
@@ -34,9 +38,13 @@ class UserDoc:
     about_me: Optional[str] = None
     conversation_summary: Optional[str] = None
     current_state: str = "onboarding"
-    messages: list = field(default_factory=list)
+    messages: Optional[list] = None
     last_active: Optional[str] = None
     tier: str = "free"
     message_count_today: int = 0
     message_count_reset_at: Optional[str] = None
     contributed_at: Optional[str] = None
+
+    def __post_init__(self):
+        if self.messages is None:
+            self.messages = []

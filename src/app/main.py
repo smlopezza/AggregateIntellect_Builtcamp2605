@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI
 from app.webhook import router as webhook_router
 from app.jobs import router as jobs_router

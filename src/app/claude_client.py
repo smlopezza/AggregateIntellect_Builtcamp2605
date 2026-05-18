@@ -37,40 +37,84 @@ def build_context(user: UserDoc, contact: ContactDoc | None) -> str:
             f"Name: {contact.name}, {contact.role} at {contact.company}",
             f"Connection context: {contact.connection_context}",
             f"Chat scheduled: {contact.scheduled_chat_at}",
-            f"Topics of interest: {', '.join(contact.topics_of_interest)}",
+            f"Topics of interest: {', '.join(contact.topics_of_interest) if contact.topics_of_interest else 'none'}",
             f"Post-call notes: {contact.post_call_notes or 'none yet'}",
         ]
     return "\n".join(parts)
 
 
-def call_claude(system: str, messages: list, model: str = SONNET) -> tuple[str, dict | None]:
-    """Returns (text_response, tool_use_inputs | None)."""
+def _make_request(system: str, messages: list, model: str) -> anthropic.types.Message:
     from app.prompts import TOOLS
-    response = get_client().messages.create(
+    return get_client().messages.create(
         model=model,
         max_tokens=1024,
         system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
         tools=TOOLS,
         messages=messages,
     )
-    tool_use = None
+
+
+def call_claude(system: str, messages: list, model: str = SONNET) -> tuple[str, list, str | None, dict | None]:
+    """
+    Returns (text, response_content, tool_use_id | None, tool_inputs | None).
+    response_content is the raw assistant turn needed to continue the conversation after tool use.
+    """
+    response = _make_request(system, messages, model)
     text = ""
+    tool_use_id = None
+    tool_inputs = None
     for block in response.content:
         if block.type == "tool_use":
-            tool_use = block.input
+            tool_use_id = block.id
+            tool_inputs = block.input
         elif block.type == "text":
             text = block.text
-    return text, tool_use
+    return text, response.content, tool_use_id, tool_inputs
 
 
-async def generate_summary(user: UserDoc) -> str:
+def continue_with_tool_result(
+    system: str,
+    messages: list,
+    assistant_content: list,
+    tool_use_id: str,
+    model: str = SONNET,
+) -> str:
+    """Send tool_result back to Claude and return the final text response."""
+    extended = messages + [
+        {"role": "assistant", "content": assistant_content},
+        {"role": "user", "content": [{"type": "tool_result", "tool_use_id": tool_use_id, "content": "ok"}]},
+    ]
+    response = _make_request(system, extended, model)
+    for block in response.content:
+        if block.type == "text":
+            return block.text
+    return ""
+
+
+def generate_summary(user: UserDoc) -> str:
     response = get_client().messages.create(
         model=HAIKU,
         max_tokens=300,
-        system="Summarise the conversation history in 3–5 sentences. "
-               "Capture: user's current situation, key contacts discussed, "
-               "important moments (milestones, emotional shifts, insights), "
-               "and any open threads. Write in third person. Be concise.",
+        system=(
+            "Summarise the conversation history in 3–5 sentences. "
+            "Capture: user's current situation, key contacts discussed, "
+            "important moments (milestones, emotional shifts, insights), "
+            "and any open threads. Write in third person. Be concise."
+        ),
         messages=[{"role": "user", "content": str(user.messages)}],
     )
     return response.content[0].text
+
+
+def call_claude_simple(system: str, prompt: str, model: str = HAIKU) -> str:
+    """Single-turn call without tools — used by proactive job endpoints."""
+    response = get_client().messages.create(
+        model=model,
+        max_tokens=512,
+        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+        messages=[{"role": "user", "content": prompt}],
+    )
+    for block in response.content:
+        if block.type == "text":
+            return block.text
+    return ""

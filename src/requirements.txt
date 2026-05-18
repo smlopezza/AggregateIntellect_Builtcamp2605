@@ -4,3 +4,4 @@ anthropic==0.40.0
 twilio==9.3.6
 google-cloud-firestore==2.19.0
 python-dotenv==1.0.1
+python-multipart==0.0.9
